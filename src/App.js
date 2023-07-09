@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CurrentLocation from "./currentLocation";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <CurrentLocation />
+      </div>
+      <div className="footer-info">
+        {/* <a href="https://www.htmlhints.com/article/how-to-create-toggle-switch/93">
+          Download Source Code
+        </a> */}
+        {/* {" "} */}
+        Developed by{" "}
+        {/* <a target="_blank" href="https://www.gauravghai.dev/"> */}
+          Prashant Aditya
+        {/* </a> */}
+        {" "}
+        {/* | Powered by{" "}
+        <a target="_blank" href="https://www.htmlhints.com/">
+          HTML HINTS
+        </a> */}
+      </div>
+    </React.Fragment>
   );
 }
 
